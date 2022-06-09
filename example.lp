@@ -5,7 +5,6 @@ slot(h10). % 10h00 - 11h40
 slot(h14). % 14h00 - 15h40
 slot(h16). % 16h00 - 17h40
 
-last(h10; h16).
 next(h8, h10).
 next(h14, h16).
 prev(h16, h14).
@@ -29,29 +28,29 @@ day(fri, 6).
 
 % Professors
 
-prof(daniel).
-prof(ddm).
-prof(jb).
-prof(ernesto).
 prof(acvm).
-prof(cris).
-prof(yoshi).
-prof(fujita).
-prof(finger).
-prof(coelho).
-prof(mqz).
+prof(yoshiko).
+prof(siang).
 prof(pmiranda).
 prof(alair).
-prof(guilherme).
-prof(yoshiko).
-prof(gold).
-prof(siang).
 prof(renata).
-prof(kon).
 prof(kenji).
-prof(kelly).
-prof(jef).
+prof(mqz).
 prof(sinai).
+prof(kelly).
+prof(finger).
+prof(jef).
+prof(guilherme).
+prof(jb).
+prof(coelho).
+prof(gold).
+prof(fujita).
+prof(yoshi).
+prof(cris).
+prof(daniel).
+prof(ddm).
+prof(kon).
+prof(ernesto).
 
 % Subjects
 
@@ -91,7 +90,7 @@ lectures(mqz, mac0317).
 undergrad(mac0317).
 
 subject(mac0318).
-freq(mac0318, 1).
+freq(mac0318, 2).
 lectures(ddm, mac0318).
 undergrad(mac0318).
 double(mac0318).
@@ -142,7 +141,7 @@ lectures(jb, mac0460).
 undergrad(mac0460).
 
 subject(mac0472).
-freq(mac0472, 1).
+freq(mac0472, 2).
 lectures(gold, mac0472).
 undergrad(mac0472).
 double(mac0472).
