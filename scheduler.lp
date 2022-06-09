@@ -26,13 +26,13 @@ adjacent(S, T) :- slot(S), slot(T), prev(S, T), S != T.
 :- subject(X), at(X, T, W), afternoon(T), W == fri.
 
 % A subject is on a day if it's scheduled on that week day.
-on(W, C) :- C = #count { X,R,W : at(X, R, W), subject(X), slot(R) }, day(W).
+on(W, R, C) :- C = #count { X,R,W : at(X, R, W), subject(X) }, day(W), slot(R).
 
 % Minimize the number of classes in a day.
-#minimize { C : on(W, C), day(W) }.
+#minimize { C : on(W, R, C), day(W), slot(R) }.
 
 % Show only schedule results.
 #show at/3.
 
 % Debug variables.
-#show on/2.
+%#show on/3.
